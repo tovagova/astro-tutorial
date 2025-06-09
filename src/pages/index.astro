@@ -1,5 +1,10 @@
 ---
+import "../styles/global.css";
+import Footer from '../components/Footer.astro';
+import Header from '../components/Header.astro';
+import BaseLayout from '../layouts/BaseLayout.astro';
 
+const pageTitle = "Tova's Homepage";
 ---
 
 <html lang="en">
@@ -12,6 +17,12 @@
 	</head>
 	<body>
 		<h1>Tova's site</h1>
+		<Header />
 		<h2>My sexy new site testing weee</h2>
+		<p>it is very impressive</p>
+		<Footer />
+		<script>
+			import "../scripts/menu.js";
+  		</script>
 	</body>
 </html>
